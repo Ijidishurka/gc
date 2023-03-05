@@ -1,3 +1,4 @@
+# meta developer: @modwini
 import io
 import random
 
@@ -10,13 +11,13 @@ from .. import loader, utils
 
 @loader.tds
 class KeywordMod(loader.Module):
-    """Подпишись на канал @modwini"""
+    """Присылает громкое голосовое сообщение +_+"""
 
     strings = {"name": "громкие гс"}
 
     @loader.unrestricted
     async def micmd(self, message: Message):
-        """Присылает громкое голосовое сообщение +_+"""
+        """Скинуть гс"""
         args = utils.get_args_raw(message) or "<i></i>"
         mi = [
 "https://github.com/Ijidishurka/gs/blob/main/%D0%B7%D0%B0%D0%B9%D1%82%D0%B8%20%D0%B2%20%D0%BA%D0%BB%D0%B5%D1%88.mp3?raw=true",
